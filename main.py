@@ -87,6 +87,7 @@ async def ask(body: AskRequest):
             "--audio-format", "mp3",
             "--audio-quality", "0",
             "--no-playlist",
+            "--js-runtimes", "nodejs",
             "-o", tmp_audio,
             body.video_url
         ]
